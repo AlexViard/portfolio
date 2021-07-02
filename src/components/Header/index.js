@@ -15,21 +15,29 @@ const Header = () => (
       <h2 className="header-subtitle">Développeur Fullstack JavaScript</h2>
       <ul className="header-list">
         <li className="header-list-icon">
-          <IoLogoInstagram />
+          <a href="https://www.instagram.com/alex.devv_" target="_blank" rel="noreferrer">
+            <IoLogoInstagram />
+          </a>
         </li>
         <li className="header-list-icon">
-          <IoLogoGithub />
+          <a href="https://github.com/AlexViard" target="_blank" rel="noreferrer">
+            <IoLogoGithub />
+          </a>
         </li>
         <li className="header-list-icon">
-          <IoLogoLinkedin />
+          <a href="https://www.linkedin.com/in/alex-viard/" target="_blank" rel="noreferrer">
+            <IoLogoLinkedin />
+          </a>
         </li>
         <li className="header-list-icon">
-          <IoMailOutline />
+          <a href="mailto:alex-viard@hotmail.fr">
+            <IoMailOutline />
+          </a>
         </li>
       </ul>
+      <div className="header-btn">Me contactez</div>
     </div>
     <div className="header-img">
-      <p>img</p>
       <img src="" alt="" />
     </div>
   </div>
