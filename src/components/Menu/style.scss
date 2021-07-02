@@ -1,10 +1,9 @@
 @use 'src/styles/vars';
 
 .menu {
-  color: #fff;
+  color: vars.$secondary-color;
   border-right: 1px solid hsla(0,0%,100%,.1);
   background: vars.$primary-color;
-  padding: 50px 40px 40px;
   position: fixed;
   left: 0;
   height: 100vh;
@@ -12,22 +11,35 @@
   top: 0;
   width: 290px;
   transition: all .3s ease-in-out;
-  font-size: 20px;
-  font-weight: 500;
-  
+  font-size: vars.$text-size;
+  font-weight: vars.$bold-weight;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3em;
+  padding-bottom: 1em;
+
   &-nav {
-    margin-top: 4em;
-    padding: 1em;
 
     &-li {
-      padding-bottom: 2em;
+      margin-bottom: 2em;
       display: flex;
       align-items: center;
-
+      
       &-link {
         margin-left: 0.5em;
       }
     }
+
+    &-li:hover {
+     cursor: pointer;
+     color: vars.$third-color; 
+    }
+  }
+
+  &-copyright {
+    font-weight: vars.$light-weight;
   }
 }
 

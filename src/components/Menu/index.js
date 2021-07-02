@@ -14,6 +14,7 @@ import {
 
 const Menu = () => (
   <div className="menu">
+    <div className="menu-logo">Logo</div>
     <nav className="menu-nav">
       <ul>
         <li className="menu-nav-li">
@@ -46,6 +47,7 @@ const Menu = () => (
         </li>
       </ul>
     </nav>
+    <p className="menu-copyright">Alex Viard © copyright 2021</p>
   </div>
 );
 

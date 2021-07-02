@@ -3,6 +3,7 @@ import React from 'react';
 
 // == Import components
 import Menu from 'src/components/Menu';
+import Header from 'src/components/Header';
 
 import './styles.scss';
 
@@ -10,6 +11,7 @@ import './styles.scss';
 const App = () => (
   <div className="app">
     <Menu />
+    <Header />
   </div>
 );
 

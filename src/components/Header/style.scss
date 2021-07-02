@@ -1,0 +1,56 @@
+@use 'src/styles/vars';
+
+.header {
+  margin-left: 290px;
+  display: flex;
+  justify-content: space-around;
+  background-color: vars.$primary-color;
+  color: vars.$secondary-color;
+  height: 100vh;
+  align-items: center;
+
+  &-intro {
+    text-align: center;
+  }
+
+  &-title {
+    font-size: vars.$title-size;
+    margin-bottom: 0.5em;
+    font-weight: vars.$bold-weight;
+  }
+  
+  &-subtitle {
+    font-size: vars.$subtitle-size;
+    margin-bottom: 0.5em;
+  }
+
+  &-list {
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+
+    &-icon {
+      margin: 0.5em;
+    }
+    
+    &-icon:hover {
+      color: vars.$third-color;
+    }
+  }
+
+  &-btn {
+    background-color: vars.$third-color;
+    padding: 1em;
+    font-weight: vars.$bold-weight;
+    border-radius: 30px;
+    max-width: 200px;
+    cursor: pointer;
+    margin: auto;
+  }
+
+  &-img {
+    border: 1px solid red;
+    width: 300px;
+    height: 400px;
+  }
+}
