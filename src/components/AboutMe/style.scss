@@ -2,14 +2,13 @@
 
 .about_me {
   height: 100vh;
-  background-color: vars.$primary-color;
   margin-left: 290px;
   color: vars.$secondary-color;
   padding-top: 5em;
   
 
   &-title {
-    font-size: 36px;
+    font-size: vars.$title-size;
     font-weight: vars.$bold-weight;
   }
 
@@ -21,7 +20,6 @@
   &-content {
     margin-top: 5em;
     display: flex;
-    // justify-content: center;
     
     &-container {
       background-color: vars.$primary-color-lightness;

@@ -5,6 +5,7 @@ import React from 'react';
 import Menu from 'src/components/Menu';
 import Header from 'src/components/Header';
 import AboutMe from 'src/components/AboutMe';
+import Experience from 'src/components/Experience';
 
 import './styles.scss';
 
@@ -14,6 +15,7 @@ const App = () => (
     <Menu />
     <Header />
     <AboutMe />
+    <Experience />
   </div>
 );
 
