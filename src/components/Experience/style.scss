@@ -1,0 +1,80 @@
+@use 'src/styles/vars';
+
+* {
+  box-sizing:border-box;
+}
+
+.experience {
+  height: 150vh;
+  margin-left: 290px;
+  color: vars.$secondary-color;
+  padding-top: 5em;
+
+  &-content {
+      max-width: 1030px;
+      margin: auto;
+
+      &-display {
+        display: flex;
+
+        &-icon {
+          color: vars.$third-color;
+          font-size: 30px;
+          // margin-right: 0.5em; 
+          position: absolute;
+        }
+      }
+      
+      &-line {
+        position: absolute;
+        width: 1px;
+        background-color: vars.$third-color;
+        top: 20px;
+        bottom: 30px;
+        left: 38px;
+      }
+
+      &-title {
+        font-size: vars.$title-size;
+        font-weight: vars.$bold-weight;
+      }
+
+      &-containers {
+        margin-top: 5em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+
+      &-container {
+        padding: 1.5em;
+        border-radius: 20px;
+        background-color: vars.$primary-color-lightness;
+        display: flex;
+        max-width: 490px;
+        hyphens: auto;
+        margin-bottom: 1em;
+        position: relative;
+      }
+
+      &-list-formation {
+        margin-bottom: 1em;
+        margin-left: 3em;
+        &-title {
+          font-size: 20px;
+          margin-bottom: 0.2em;
+          
+        }
+
+        &-subtitle {
+          color: vars.$third-color;
+          font-style: italic;
+          margin-bottom: 1em;
+        }
+
+        &-description {
+          line-height: 1.7;
+        }
+      }
+  }
+}
