@@ -10,36 +10,40 @@ import './style.scss';
 
 const Header = () => (
   <div className="header">
-    <div className="header-intro">
-      <h1 className="header-title">Alex Viard</h1>
-      <h2 className="header-subtitle">Développeur Fullstack JavaScript</h2>
-      <ul className="header-list">
-        <li className="header-list-icon">
-          <a href="https://www.instagram.com/alex.devv_" target="_blank" rel="noreferrer">
-            <IoLogoInstagram />
-          </a>
-        </li>
-        <li className="header-list-icon">
-          <a href="https://github.com/AlexViard" target="_blank" rel="noreferrer">
-            <IoLogoGithub />
-          </a>
-        </li>
-        <li className="header-list-icon">
-          <a href="https://www.linkedin.com/in/alex-viard/" target="_blank" rel="noreferrer">
-            <IoLogoLinkedin />
-          </a>
-        </li>
-        <li className="header-list-icon">
-          <a href="mailto:alex-viard@hotmail.fr">
-            <IoMailOutline />
-          </a>
-        </li>
-      </ul>
-      <div className="header-btn">Me contactez</div>
+    <div className="header-content">
+      <div className="header-content-intro">
+        <h1 className="header-content-title">Alex Viard</h1>
+        <h2 className="header-content-subtitle">Développeur Fullstack JavaScript</h2>
+        <ul className="header-content-list">
+          <li className="header-content-list-icon">
+            <a href="https://www.instagram.com/alex.devv_" target="_blank" rel="noreferrer">
+              <IoLogoInstagram />
+            </a>
+          </li>
+          <li className="header-content-list-icon">
+            <a href="https://github.com/AlexViard" target="_blank" rel="noreferrer">
+              <IoLogoGithub />
+            </a>
+          </li>
+          <li className="header-content-list-icon">
+            <a href="https://www.linkedin.com/in/alex-viard/" target="_blank" rel="noreferrer">
+              <IoLogoLinkedin />
+            </a>
+          </li>
+          <li className="header-content-list-icon">
+            <a href="mailto:alex-viard@hotmail.fr">
+              <IoMailOutline />
+            </a>
+          </li>
+        </ul>
+        <div className="header-content-btn">Me contactez</div>
+      </div>
+      <div className="header-content-img">
+        <img src="" alt="" />
+      </div>
     </div>
-    <div className="header-img">
-      <img src="" alt="" />
-    </div>
+
+    <div className="header-scrool-down"></div>
   </div>
 );
 
