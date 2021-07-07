@@ -4,7 +4,7 @@
   height: 100vh;
   margin-left: 290px;
   color: vars.$secondary-color;
-  padding-top: 5em;
+  padding-top: 10em;
 
   &-content {
     max-width: 1030px;
@@ -105,8 +105,43 @@
   }
 
   &-left {
-    border: 1px solid red;
-    width: 300px;
+    // border: 1px solid red;
+    width: 400px;
+
+    &-container {
+      padding: 1.5em;
+    }
+
+    &-content {
+      margin-bottom: 1.5em;
+      text-align: center;
+    }
+
+    &-icon_title {
+      margin-bottom: 0.5em;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &-title {
+      font-size: vars.$subtitle-size;
+      font-weight: vars.$medium-weight;
+      text-transform: uppercase;
+    }
+
+    &-list {
+      li {
+        margin-bottom: 0.3em;
+      }
+    }
+
+    &-icon {
+      font-size: 2em;
+      margin-right: 0.3em;
+      color: vars.$third-color;
+    }
   }
 
   &-html {
