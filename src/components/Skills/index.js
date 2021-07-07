@@ -8,6 +8,10 @@ import {
   SiNodeDotJs,
   SiReact,
 } from 'react-icons/si';
+
+import { FaDatabase } from 'react-icons/fa';
+import { BsFileEarmarkCode, BsChatDots } from 'react-icons/bs';
+import { GiProgression } from 'react-icons/gi';
 import './style.scss';
 
 const Skills = () => (
@@ -15,7 +19,59 @@ const Skills = () => (
     <div className="skills-content">
       <h1 className="skills-title">Mes competences</h1>
       <div className="skills-containers">
-        <div className="skills-left"></div>
+        <div className="skills-left">
+          <div className="skills-left-container">
+
+            <div className="skills-left-content">
+              <div className="skills-left-icon_title">
+                <BsFileEarmarkCode className="skills-left-icon" />
+                <p className="skills-left-title">Front-End</p>
+              </div>
+              <ul className="skills-left-list">
+                <li>- Maquetter une application</li>
+                <li>- Réaliser une interface utilisateur responsive statique ou dynamique</li>
+                <li>- Réaliser une interface utilisateur avec une solution de gestion de contenu</li>
+              </ul>
+            </div>
+
+            <div className="skills-left-content">
+              <div className="skills-left-icon_title">
+                <FaDatabase className="skills-left-icon" />
+                <p className="skills-left-title">Back-End</p>
+              </div>
+              <ul className="skills-left-list">
+                <li>- Créer une base de données</li>
+                <li>- Développer les composants d'accès aux données</li>
+                <li>- Développer la partie back-end d'une application web ou mobile</li>
+              </ul>
+            </div>
+
+            <div className="skills-left-content">
+              <div className="skills-left-icon_title">
+                <BsChatDots className="skills-left-icon" />
+                <p className="skills-left-title">Communication</p>
+              </div>
+              <ul className="skills-left-list">
+                <li>- Faire preuves de minutie</li>
+                <li>- Être à l'ecoute et s'adapter</li>
+                <li>- Avoir le sens des priorités pour savoir planifier les taches</li>
+              </ul>
+            </div>
+
+            <div className="skills-left-content">
+              <div className="skills-left-icon_title">
+                <GiProgression className="skills-left-icon" />
+                <p className="skills-left-title">Qualité Web</p>
+              </div>
+              <ul className="skills-left-list">
+                <li>- Prendre en compte la diversité et les exigeances des utilisateurs</li>
+                <li>- Connaître les bonnes pratiques, leur conception et leur utilisation</li>
+                <li>- Utiliser une check-list qualité Web</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
         <div className="skills-right">
 
           <div className="skills-right-bar">
