@@ -1,0 +1,159 @@
+@use 'src/styles/vars';
+
+.skills {
+  height: 100vh;
+  margin-left: 290px;
+  color: vars.$secondary-color;
+  padding-top: 5em;
+
+  &-content {
+    max-width: 1030px;
+    margin: auto;
+  }
+
+  &-title {
+    font-size: vars.$title-size;
+    font-weight: vars.$bold-weight;
+  }
+
+  &-containers {
+    margin-top: 5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  &-right {
+    width: 500px;
+    // background-color: vars.$primary-color-lightness;
+    padding: 1.5em;
+    border-radius: 20px;
+
+    &-bar {
+      padding: 1em 0;
+    }
+
+    &-info {
+      margin-bottom: 0.5em;
+      display: flex;
+      align-items: center;
+    }
+
+    &-text {
+      font-weight: vars.$medium-weight;
+      font-size: vars.$text-size;
+      opacity: 0;
+      animation: showText2 0.5s 1s linear forwards;
+      
+    }
+
+    &-icon {
+      font-size: 1.5em;
+      margin-right: 0.5em;
+    }
+
+    &-progress-line {
+      height: 10px;
+      width: 100%;
+      background: vars.$primary-color-lightness;
+      position: relative;
+      border-radius: 10px;
+      transform: scaleX(0);
+      transform-origin: left;
+      animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+
+       & span {
+        height: 100%;
+        background-color: vars.$third-color;
+        border-radius: 10px;
+        position: absolute;
+        transform: scaleX(0);
+        transform-origin: left;
+        animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+      }
+
+      & span::before {
+        position: absolute;
+        content: "";
+        height: 0;
+        width: 0;
+        right: 0;
+        top: -15px;
+        border: 10px solid transparent;
+        border-bottom-width: 0px;
+        border-right-width: 0px;
+        border-top-color: #000;
+        opacity: 0;
+        animation: showText2 0.5s 1.5s linear forwards;
+      }
+
+      & span::after {
+        position: absolute;
+        content: attr(data-content);
+        right: 0;
+        top: -28px;
+        color: #fff;
+        font-size: 12px;
+        font-weight: 500;
+        background: #000;
+        padding: 3px 8px;
+        border-radius: 3px;
+        opacity: 0;
+        animation: showText2 0.5s 1.5s linear forwards;
+      }
+    }
+  }
+
+  &-left {
+    border: 1px solid red;
+    width: 300px;
+  }
+
+  &-html {
+    color: vars.$html;
+  }
+  
+  &-css {
+    color: vars.$css;
+  }
+  
+  &-js {
+    color: vars.$js;
+  }
+  
+  &-node {
+    color: vars.$node;
+  }
+  
+  &-react {
+    color: vars.$react; 
+  }
+  
+  &-redux {
+    color: vars.$redux;
+  }
+  
+  &-postgresql {
+    color: vars.$postgresql;
+  }
+
+}
+
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes showText2 {
+  100% {
+    opacity: 1;
+  }
+}
