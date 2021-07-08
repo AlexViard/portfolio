@@ -1,0 +1,112 @@
+@use 'src/styles/vars';
+
+.works {
+  height: 100vh;
+  margin-left: 290px;
+  color: vars.$secondary-color;
+  margin-top: 3em;
+
+  &-content {
+    max-width: 1030px;
+    margin: auto;
+  }
+
+  &-title {
+    font-size: vars.$title-size;
+    font-weight: vars.$bold-weight;
+  }
+
+  &-nav {
+    margin-top: 3em;
+  }
+
+  &-categories {
+    display: flex;
+    justify-content: center;
+  }
+
+  &-category {
+    background-color: vars.$primary-color-lightness;
+    padding: 1em;
+    margin: 0.2em;
+    font-size: vars.$text-size;
+    font-weight: vars.$medium-weight;
+    border-radius: 20px;
+
+    &:hover {
+      background-color: vars.$third-color;
+    }
+  }
+
+  &-containers {
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-container {
+    background: vars.$primary-color-lightness;
+    width: 250px;
+    height: 250px;
+    margin: 1em;
+    border-radius: 20px;
+    background-image: url("src/assets/images/img-works.jpg");
+    background-position: center;
+    background-size: cover;
+
+    &-filter {
+      padding: 1.5em;
+      width: 100%;
+      border-radius: 20px;
+      height: 100%;
+      transition: all .2s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      position: relative;
+
+      &:hover {
+        background-color: vars.$third-color-opacity; 
+
+        .works-container-title {
+          opacity: 1;
+        }
+
+        .works-container-icon {
+          opacity: 1;
+        }
+
+        .works-container-category {
+          opacity: 1;
+        }
+      }
+    }
+
+    &-category {
+      padding: 0.3em 0.5em;
+      position: absolute;
+      top: 0px;
+      left: 20px;
+      opacity: 0;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      transition: all 1s cubic-bezier(.075,.82,.165,1);
+    }
+
+    &-title {
+      font-weight: vars.$medium-weight;
+      font-size: vars.$subtitle-size;
+      opacity: 0;
+      transition: all 1s cubic-bezier(.075,.82,.165,1);
+    }
+
+    &-icon {
+      font-size: 2em;
+      opacity: 0;
+      transition: all 1s cubic-bezier(.075,.82,.165,1);
+    }
+  }
+}

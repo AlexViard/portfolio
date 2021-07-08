@@ -7,6 +7,7 @@ import Header from 'src/components/Header';
 import AboutMe from 'src/components/AboutMe';
 import Experience from 'src/components/Experience';
 import Skills from 'src/components/Skills';
+import Works from 'src/components/Works';
 
 import './styles.scss';
 
@@ -18,6 +19,7 @@ const App = () => (
     <AboutMe />
     <Experience />
     <Skills />
+    <Works />
   </div>
 );
 
