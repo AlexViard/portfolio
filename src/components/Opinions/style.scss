@@ -1,0 +1,64 @@
+@use 'src/styles/vars';
+
+.opinions {
+  height: 100vh;
+  margin-left: 290px;
+  color: vars.$secondary-color;
+  margin-top: 5em;
+
+  &-content {
+    max-width: 1030px;
+    margin: auto;
+  }
+
+  &-title {
+    font-size: vars.$title-size;
+    font-weight: vars.$bold-weight;
+  }
+
+  &-container {
+    margin-top: 5em;
+  }
+
+  .swiper-slide {
+    border-radius: 20px;
+    background-color: vars.$primary-color-lightness;
+    width: 300px;
+    height: 400px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    
+    &-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background-position: center;
+    }
+
+    &-reviews {
+      font-size: vars.$text-size;
+      line-height: 1.5;
+    }
+
+    &-author {
+      font-size: vars.$subtitle-size;
+      font-weight: vars.$medium-weight;
+    }
+
+    &-job-city {
+      font-weight: vars.$light-weight;
+    }
+
+  }
+  
+  @media (max-width: 768px) {
+    .swiper-slide {
+      width: 250px;
+      height: auto;
+    }
+  }
+}
