@@ -4,9 +4,8 @@ import React from 'react';
 // import PropTypes from 'prop-types';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper.min.css';
-import 'swiper/components/effect-coverflow/effect-coverflow.min.css';
-import 'swiper/components/pagination/pagination.min.css';
-import 'swiper/components/navigation/navigation.min.css';
+import 'swiper/swiper-bundle.min.css';
+
 import './style.scss';
 import julienAnthony from 'src/assets/images/julien-anthony.png';
 import jlPerez from 'src/assets/images/jl-perez.jpeg';
@@ -17,7 +16,7 @@ import SwiperCore, {
   Navigation,
 } from 'swiper/core';
 
-SwiperCore.use([EffectCoverflow, Pagination, Navigation]);
+SwiperCore.use([Navigation, EffectCoverflow, Pagination]);
 
 const Opinions = () => (
   <div className="opinions">
@@ -29,7 +28,7 @@ const Opinions = () => (
           navigation
           effect="coverflow"
           centeredSlides
-          slidesPerView={window.innerWidth < 768 ? 1 : 'auto'}
+          slidesPerView={window.innerWidth < 600 ? 1 : 3}
           loop
           coverflowEffect={{
             rotate: 50,

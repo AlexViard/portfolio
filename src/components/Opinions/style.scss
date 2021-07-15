@@ -17,9 +17,13 @@
   }
 
   &-container {
-    margin-top: 5em;
+    margin-top: 5em; 
   }
 
+  // Style swifter js swiper + slides
+  .mySwiper {
+    padding-bottom: 3em;
+  }
   .swiper-slide {
     border-radius: 20px;
     background-color: vars.$primary-color-lightness;
@@ -54,11 +58,29 @@
     }
 
   }
-  
-  @media (max-width: 768px) {
-    .swiper-slide {
-      width: 250px;
-      height: auto;
-    }
+
+  // Style pagination swifter js
+
+  .swiper-pagination {
+    bottom: 0px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: vars.$third-color;
+  }
+
+  .swiper-pagination-bullet{
+    width: 25px;
+    height: 5px;
+    border-radius: 5px;
+  }
+
+  // Style arrows swifter js
+  .swiper-button-prev {
+    color: vars.$third-color;
+  }
+
+  .swiper-button-next {
+    color: vars.$third-color;
   }
 }
