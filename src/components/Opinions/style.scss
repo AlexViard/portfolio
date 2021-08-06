@@ -1,0 +1,86 @@
+@use 'src/styles/vars';
+
+.opinions {
+  height: 100vh;
+  margin-left: 290px;
+  color: vars.$secondary-color;
+  margin-top: 5em;
+
+  &-content {
+    max-width: 80%;
+    margin: auto;
+  }
+
+  &-title {
+    font-size: vars.$title-size;
+    font-weight: vars.$bold-weight;
+  }
+
+  &-container {
+    margin-top: 5em; 
+  }
+
+  // Style swifter js swiper + slides
+  .mySwiper {
+    padding-bottom: 3em;
+  }
+  .swiper-slide {
+    border-radius: 20px;
+    background-color: vars.$primary-color-lightness;
+    width: 300px;
+    height: 400px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    
+    &-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background-position: center;
+    }
+
+    &-reviews {
+      font-size: vars.$text-size;
+      line-height: 1.5;
+    }
+
+    &-author {
+      font-size: vars.$subtitle-size;
+      font-weight: vars.$medium-weight;
+    }
+
+    &-job-city {
+      font-weight: vars.$light-weight;
+    }
+
+  }
+
+  // Style pagination swifter js
+
+  .swiper-pagination {
+    bottom: 0px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: vars.$third-color;
+  }
+
+  .swiper-pagination-bullet{
+    width: 25px;
+    height: 5px;
+    border-radius: 5px;
+  }
+
+  // Style arrows swifter js
+  .swiper-button-prev {
+    color: vars.$third-color;
+  }
+
+  .swiper-button-next {
+    color: vars.$third-color;
+  }
+}

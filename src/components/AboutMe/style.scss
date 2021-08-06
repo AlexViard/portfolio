@@ -13,13 +13,14 @@
   }
 
   &-page {
-    max-width: 1030px;
+    max-width: 80%;
     margin: auto;
   }
 
   &-content {
     margin-top: 5em;
     display: flex;
+    justify-content: space-around;
     
     &-container {
       background-color: vars.$primary-color-lightness;

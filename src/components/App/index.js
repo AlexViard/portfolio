@@ -8,6 +8,7 @@ import AboutMe from 'src/components/AboutMe';
 import Experience from 'src/components/Experience';
 import Skills from 'src/components/Skills';
 import Works from 'src/components/Works';
+import Opinions from 'src/components/Opinions';
 
 import './styles.scss';
 
@@ -20,6 +21,7 @@ const App = () => (
     <Experience />
     <Skills />
     <Works />
+    <Opinions />
   </div>
 );
 
