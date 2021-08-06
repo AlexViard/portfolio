@@ -1,0 +1,9 @@
+@use 'src/styles/vars';
+
+.contact {
+  height: 100vh;
+  margin-left: 290px;
+  color: vars.$secondary-color;
+  margin-top: 3em;
+  border: 1px solid red;
+}
