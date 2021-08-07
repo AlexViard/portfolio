@@ -4,6 +4,16 @@
   height: 100vh;
   margin-left: 290px;
   color: vars.$secondary-color;
-  margin-top: 3em;
   border: 1px solid red;
+  padding: 5em;
+
+  &-content {
+    width: 80%;
+    
+    &-title {
+      font-size: vars.$title-size;
+      font-weight: vars.$bold-weight;
+    }
+    
+  }
 }
