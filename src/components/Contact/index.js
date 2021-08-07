@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
-import { GoogleMap, withScriptjs, withGoogleMap } from 'react-google-maps';
+import { GoogleMap, withScriptjs, withGoogleMap, Marker } from 'react-google-maps';
 
 import './style.scss';
 
@@ -9,7 +9,6 @@ const Contact = () => {
     firstName: null,
     lastName: null,
     email: null,
-    phone: null,
     content: null,
   });
 
@@ -25,10 +24,18 @@ const Contact = () => {
   };
 
   const map = () => (
-    <GoogleMap
-      defaultZoom={10}
-      defaultCenter={{ lat: 43.253790, lng: 2.264710 }}
-    />
+    <>
+      <GoogleMap
+        defaultZoom={10}
+        defaultCenter={{ lat: 43.253790, lng: 2.264710 }}
+      />
+      <Marker
+        position={{
+          lat: 43.253790,
+          lng: 2.264710,
+        }}
+      />
+    </>
   );
 
   const WrappedMap = withScriptjs(withGoogleMap(map));
@@ -51,12 +58,23 @@ const Contact = () => {
 
           <div className="contact-content-container-informations">
             <form className="contact-form" onSubmit={sendEmail}>
-              <input type="text" name="firstName" placeholder="Prénom" />
-              <input type="text" name="lastName" placeholder="Nom" />
-              <input type="email" name="email" placeholder="Email" />
-              <input type="number" name="phone" placeholder="Téléphone" />
-              <textarea name="content" />
-              <input type="submit" value="Send" />
+              <div className="row">
+                <div className="row-input">
+                  <input type="text" name="firstName" placeholder="Prénom" />
+                </div>
+                <div className="row-input">
+                  <input type="text" name="lastName" placeholder="Nom" />
+                </div>
+              </div>
+              <div className="input">
+                <input type="email" name="email" placeholder="Email" />
+              </div>
+              <div className="input text-area">
+                <textarea name="content" placeholder="Ton message d'amour ;)" />
+              </div>
+              <div className="btn">
+                <input type="submit" value="Envoyer" />
+              </div>
             </form>
           </div>
         </div>
