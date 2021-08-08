@@ -12,24 +12,26 @@ import {
   AiOutlineForm,
 } from 'react-icons/ai';
 
+import {
+  ToastContainer,
+  toast,
+  Zoom,
+  Bounce,
+} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import './style.scss';
 
 const Contact = () => {
-  const [message, setMessage] = useState({
-    name: null,
-    email: null,
-    subject: null,
-    content: null,
-  });
-
   const sendEmail = (e) => {
     e.preventDefault();
-    console.log(e.target);
     emailjs.sendForm('service_htgcwa6', 'template_w1uls6h', e.target, 'user_320dn2BuKuORXomQQQTH1')
-      .then((result) => {
-        console.log(result.text);
-      }, (error) => {
-        console.log(error.text);
+      .then(() => {
+        console.log('OK');
+        toast.success('Votre message a bien été envoyé.');
+      }, () => {
+        console.log('ERROR');
+        toast.error('Une erreur inattendue s\'est produite. veuillez réessayer ultérieurement ');
       });
   };
 
@@ -62,28 +64,29 @@ const Contact = () => {
               googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${process.env.REACT_APP_GOOGLE_MAP_KEY}`}
               loadingElement={<div style={{ height: '100%' }} />}
               containerElement={<div style={{ height: '100%' }} />}
-              mapElement={<div style={{ height: '100%' }} />}
+              mapElement={<div style={{ height: '100%', borderRadius: '20px' }} />}
             />
           </div>
 
           <div className="contact-content-container-informations">
+            <ToastContainer />
             <form className="contact-form" onSubmit={sendEmail}>
               <div className="row">
                 <div className="row-input">
                   <AiOutlineUser className="icon" />
-                  <input type="text" name="name" placeholder="Nom complet" />
+                  <input type="text" name="name" placeholder="Nom complet" required />
                 </div>
                 <div className="row-input">
                   <AiOutlineMail className="icon" />
-                  <input type="email" name="email" placeholder="Email" />
+                  <input type="email" name="email" placeholder="Email" required />
                 </div>
               </div>
               <div className="input">
                 <AiOutlineForm className="icon" />
-                <input type="text" name="subject" placeholder="Sujet" />
+                <input type="text" name="subject" placeholder="Sujet" required />
               </div>
 
-              <textarea name="content" placeholder="Message" rows="10" />
+              <textarea name="content" placeholder="Message" rows="10" required />
 
               <div className="btn">
                 <input type="submit" value="Envoyer" />
