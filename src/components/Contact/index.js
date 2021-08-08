@@ -1,14 +1,24 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
-import { GoogleMap, withScriptjs, withGoogleMap, Marker } from 'react-google-maps';
+import {
+  GoogleMap,
+  withScriptjs,
+  withGoogleMap,
+  Marker,
+} from 'react-google-maps';
+import {
+  AiOutlineUser,
+  AiOutlineMail,
+  AiOutlineForm,
+} from 'react-icons/ai';
 
 import './style.scss';
 
 const Contact = () => {
   const [message, setMessage] = useState({
-    firstName: null,
-    lastName: null,
+    name: null,
     email: null,
+    subject: null,
     content: null,
   });
 
@@ -43,7 +53,7 @@ const Contact = () => {
   return (
     <div className="contact">
       <div className="contact-content">
-        <h1 className="contact-content-title">Me contactez</h1>
+        <h1 className="contact-content-title">Me contacter</h1>
 
         <div className="contact-content-container">
 
@@ -60,14 +70,17 @@ const Contact = () => {
             <form className="contact-form" onSubmit={sendEmail}>
               <div className="row">
                 <div className="row-input">
-                  <input type="text" name="firstName" placeholder="Prénom" />
+                  <AiOutlineUser className="icon" />
+                  <input type="text" name="name" placeholder="Nom complet" />
                 </div>
                 <div className="row-input">
-                  <input type="text" name="lastName" placeholder="Nom" />
+                  <AiOutlineMail className="icon" />
+                  <input type="email" name="email" placeholder="Email" />
                 </div>
               </div>
               <div className="input">
-                <input type="email" name="email" placeholder="Email" />
+                <AiOutlineForm className="icon" />
+                <input type="text" name="subject" placeholder="Sujet" />
               </div>
 
               <textarea name="content" placeholder="Message" rows="10" />
