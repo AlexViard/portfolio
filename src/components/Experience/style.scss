@@ -1,18 +1,14 @@
 @use 'src/styles/vars';
 
-* {
-  box-sizing:border-box;
-}
+
 
 .experience {
-  height: 100vh;
   margin-left: 290px;
   color: vars.$secondary-color;
-  margin-top: 3em;
+  padding: 5em;
 
   &-content {
-      max-width: 80%;
-      margin: auto;
+      width: 100%;
 
       &-display {
         display: flex;
@@ -51,8 +47,7 @@
         border-radius: 20px;
         background-color: vars.$primary-color-lightness;
         display: flex;
-        max-width: 490px;
-        hyphens: auto;
+        width: 45%;
         margin-bottom: 1em;
         position: relative;
       }
@@ -60,6 +55,7 @@
       &-list-formation {
         margin-bottom: 1em;
         margin-left: 3em;
+
         &-title {
           font-size: 20px;
           margin-bottom: 0.2em;

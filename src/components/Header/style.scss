@@ -49,6 +49,10 @@
         max-width: 200px;
         cursor: pointer;
         margin: auto;
+        
+        &:hover {
+          transform: scale(1.05);
+        }
       }
     
       &-img {

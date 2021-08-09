@@ -1,10 +1,9 @@
 @use 'src/styles/vars';
 
 .about_me {
-  height: 100vh;
   margin-left: 290px;
   color: vars.$secondary-color;
-  padding-top: 5em;
+  padding: 5em;
   
 
   &-title {
@@ -13,7 +12,7 @@
   }
 
   &-page {
-    max-width: 80%;
+    width: 100%;
     margin: auto;
   }
 
@@ -21,12 +20,14 @@
     margin-top: 5em;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     
     &-container {
       background-color: vars.$primary-color-lightness;
       padding: 1.5em;
       border-radius: 20px;
-      max-width: 700px;
+      // max-width: 650px;
+      width: 70%;
 
       &-text {
         line-height: 30px;
@@ -42,12 +43,16 @@
         cursor: pointer;
         text-align: center;
         margin-top: 1em;
+
+        &:hover {
+          transform: scale(1.05);
+        }
       }
     }
 
     &-img {
-      width: 200px;
-      margin-right: 8em;
+      max-width: 200px;
+      // margin-right: 8em;
     }
 
     &-img img {
@@ -57,11 +62,13 @@
 
   &-infobar {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 
     &-info {
       margin: 5em 2.5em 0 2.5em;
       text-align: center;
+      width: 160px;
 
       &-icon {
         font-size: 4em;

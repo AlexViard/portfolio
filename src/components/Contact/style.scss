@@ -6,7 +6,7 @@
   padding: 5em;
 
   &-content {
-    width: 80%;
+    width: 100%;
     margin: auto;
 
     &-title {
@@ -74,7 +74,7 @@
         }
 
         .btn {
-          width: 20% !important;
+          max-width: 200px !important;
           background-color: vars.$third-color;
           padding: 1em !important;
           border-radius: 30px;
