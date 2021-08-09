@@ -1,7 +1,6 @@
 @use 'src/styles/vars';
 
 .contact {
-  height: 100vh;
   margin-left: 290px;
   color: vars.$secondary-color;
   padding: 5em;
@@ -22,7 +21,6 @@
 
       &-card {
         width: 40%;
-        height: 500px;
       }
 
       &-informations {
@@ -82,6 +80,10 @@
           border-radius: 30px;
           cursor: pointer;
           text-align: center;
+
+          &:hover {
+            transform: scale(1.05);
+          }
 
           input {
             font-weight: vars.$bold-weight;
