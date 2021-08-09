@@ -1,13 +1,12 @@
 @use 'src/styles/vars';
 
 .works {
-  height: 100vh;
   margin-left: 290px;
   color: vars.$secondary-color;
-  margin-top: 3em;
+  padding: 5em;
 
   &-content {
-    max-width: 80%;
+    width: 100%;
     margin: auto;
   }
 

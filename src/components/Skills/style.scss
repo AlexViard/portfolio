@@ -1,13 +1,12 @@
 @use 'src/styles/vars';
 
 .skills {
-  height: 100vh;
   margin-left: 290px;
   color: vars.$secondary-color;
-  margin-top: 3em;
+  padding: 5em;
 
   &-content {
-    max-width: 80%;
+    max-width: 100%;
     margin: auto;
   }
 
@@ -109,12 +108,13 @@
     width: 400px;
 
     &-container {
-      padding: 1.5em;
+      // padding: 1.5em;
     }
 
     &-content {
       margin-bottom: 1.5em;
       text-align: center;
+      line-height: 1.2;
     }
 
     &-icon_title {

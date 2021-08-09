@@ -25,7 +25,7 @@ const Experience = () => (
                 <p className="experience-content-list-formation-title">O'clock</p>
                 <p className="experience-content-list-formation-subtitle">Formation en télépresentiel - 700 heures intensives</p>
                 <p className="experience-content-list-formation-description">
-                  - 4 mois de socle: HTML5/CSS3/JavaScript/Nodejs/Postgres <br />
+                  - 4 mois de socle: HTML5 / CSS3 / JavaScript / Nodejs / Postgres <br />
                   - 1 mois de spécialisation: React.js/Redux <br />
                   - 1 mois de project: Days in Paris <br />
                 </p>
@@ -38,7 +38,7 @@ const Experience = () => (
                 <p className="experience-content-list-formation-title">The Hacking Project</p>
                 <p className="experience-content-list-formation-subtitle">Formation à distance en groupe - 12 semaines intensives</p>
                 <p className="experience-content-list-formation-description">
-                  - Semaine 1-9: HTML/CSS/Ruby/RubyOnRails/JavaScript/SQL/Git/GitHub <br />
+                  - Semaine 1-9: HTML / CSS / Ruby / RubyOnRails / JavaScript / SQL / Git / GitHub <br />
                   - Semaine 10-12: Projet en équipe -> "KitePackers" <br />
                 </p>
               </li>
@@ -56,7 +56,6 @@ const Experience = () => (
             <span className="experience-content-line"></span>
           </ul>
         </div>
-
         <div className="experience-content-container">
           <ul className="experience-content-list">
 

@@ -1,13 +1,12 @@
 @use 'src/styles/vars';
 
 .opinions {
-  height: 100vh;
   margin-left: 290px;
   color: vars.$secondary-color;
-  margin-top: 5em;
+  padding: 5em;
 
   &-content {
-    max-width: 80%;
+    max-width: 100%;
     margin: auto;
   }
 
