@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FiLink } from 'react-icons/fi';
 // import PropTypes from 'prop-types';
-
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 import './style.scss';
 
 const Works = () => {
@@ -9,12 +10,16 @@ const Works = () => {
     backgroundColor: '#50BBD7',
   };
 
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
+
   return (
     <div className="works">
       <div className="works-content">
-        <h1 className="works-title">Mes projets</h1>
+        <h1 className="works-title" data-aos="fade-up">Mes projets</h1>
 
-        <nav className="works-nav">
+        <nav className="works-nav" data-aos="fade-down">
           <ul className="works-categories">
             <li className="works-category">Tout les projets</li>
             <li className="works-category">React</li>
@@ -25,7 +30,7 @@ const Works = () => {
 
         <div className="works-containers">
 
-          <div className="works-container">
+          <div className="works-container" data-aos="fade-up">
             <div className="works-container-filter">
               <p className="works-container-category" style={divStyle}>React</p>
               <h2 className="works-container-title">Widget Meteo</h2>
@@ -35,7 +40,7 @@ const Works = () => {
             </div>
           </div>
 
-          <div className="works-container">
+          <div className="works-container" data-aos="fade-up">
             <div className="works-container-filter">
               <p className="works-container-category" style={divStyle}>React</p>
               <h2 className="works-container-title">Days in Paris</h2>
@@ -45,7 +50,7 @@ const Works = () => {
             </div>
           </div>
 
-          <div className="works-container">
+          <div className="works-container" data-aos="fade-up">
             <div className="works-container-filter">
               <p className="works-container-category" style={divStyle}>React</p>
               <h2 className="works-container-title">La passe D</h2>
@@ -55,7 +60,7 @@ const Works = () => {
             </div>
           </div>
 
-          <div className="works-container">
+          <div className="works-container" data-aos="fade-up">
             <div className="works-container-filter">
               <p className="works-container-category" style={divStyle}>React</p>
               <h2 className="works-container-title">To do list</h2>
@@ -65,7 +70,7 @@ const Works = () => {
             </div>
           </div>
 
-          <div className="works-container">
+          <div className="works-container" data-aos="fade-up">
             <div className="works-container-filter">
               <p className="works-container-category" style={divStyle}>React</p>
               <h2 className="works-container-title">Convertisseur</h2>
@@ -75,7 +80,7 @@ const Works = () => {
             </div>
           </div>
 
-          <div className="works-container">
+          <div className="works-container" data-aos="fade-up">
             <div className="works-container-filter">
               <p className="works-container-category" style={divStyle}>React</p>
               <h2 className="works-container-title">Le premier titre</h2>
