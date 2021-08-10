@@ -1,6 +1,8 @@
 /* eslint-disable react/self-closing-comp */
 
-import React from 'react';
+import React, { useEffect } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 // import PropTypes from 'prop-types';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper.min.css';
@@ -18,12 +20,17 @@ import SwiperCore, {
 
 SwiperCore.use([Navigation, EffectCoverflow, Pagination]);
 
-const Opinions = () => (
-  <div className="opinions">
-    <div className="opinions-content">
-      <h1 className="opinions-title">Avis</h1>
+const Opinions = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
 
-      <div className="opinions-container">
+  return (
+    <div className="opinions">
+    <div className="opinions-content">
+      <h1 className="opinions-title" data-aos="fade-up">Avis</h1>
+
+      <div className="opinions-container" data-aos="fade-up">
         <Swiper
           navigation
           effect="coverflow"
@@ -69,7 +76,8 @@ const Opinions = () => (
       </div>
     </div>
   </div>
-);
+  );
+};
 
 Opinions.propTypes = {
 
