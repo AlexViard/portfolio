@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
 import {
   GoogleMap,
@@ -11,6 +11,9 @@ import {
   AiOutlineMail,
   AiOutlineForm,
 } from 'react-icons/ai';
+
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 import {
   ToastContainer,
@@ -52,14 +55,18 @@ const Contact = () => {
 
   const WrappedMap = withScriptjs(withGoogleMap(map));
 
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
+
   return (
     <div className="contact">
       <div className="contact-content">
-        <h1 className="contact-content-title">Me contacter</h1>
+        <h1 className="contact-content-title" data-aos="fade-up">Me contacter</h1>
 
         <div className="contact-content-container">
 
-          <div className="contact-content-container-card">
+          <div className="contact-content-container-card" data-aos="fade-right">
             <WrappedMap
               googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${process.env.REACT_APP_GOOGLE_MAP_KEY}`}
               loadingElement={<div style={{ height: '100%' }} />}
@@ -70,7 +77,7 @@ const Contact = () => {
 
           <div className="contact-content-container-informations">
             <ToastContainer />
-            <form className="contact-form" onSubmit={sendEmail}>
+            <form className="contact-form" onSubmit={sendEmail} data-aos="fade-left">
               <div className="row">
                 <div className="row-input">
                   <AiOutlineUser className="icon" />
