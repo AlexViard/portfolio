@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Aos from 'aos';
+import Typical from 'react-typical';
 import 'aos/dist/aos.css';
 import {
   IoLogoInstagram,
@@ -19,7 +20,13 @@ const Header = () => {
       <div className="header-content">
         <div className="header-content-intro" data-aos="fade-up">
           <h1 className="header-content-title">Alex Viard</h1>
-          <h2 className="header-content-subtitle">Développeur Fullstack JavaScript</h2>
+          <h2 className="header-content-subtitle">Développeur{' '}
+            <Typical
+              loop={1}
+              wrapper="b"
+              steps={['Fullstack Javascript', 1200]}
+            />
+          </h2>
           <ul className="header-content-list">
             <li className="header-content-list-icon">
               <a href="https://www.instagram.com/alex.devv_" target="_blank" rel="noreferrer">
