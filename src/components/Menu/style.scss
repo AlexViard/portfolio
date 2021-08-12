@@ -18,6 +18,21 @@
   align-items: center;
   padding-top: 3em;
   padding-bottom: 1em;
+  
+  &-logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+
+    &-icon {
+      font-size: 1.5em;
+      color: vars.$react;
+      animation: spin 3s linear infinite;
+      margin-right: 0.3em;
+    }
+  }
 
   &-nav {
 
@@ -42,4 +57,7 @@
   }
 }
 
-
+@keyframes spin {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+}

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import emailjs from 'emailjs-com';
 import {
   GoogleMap,
@@ -18,8 +18,6 @@ import 'aos/dist/aos.css';
 import {
   ToastContainer,
   toast,
-  Zoom,
-  Bounce,
 } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -30,10 +28,8 @@ const Contact = () => {
     e.preventDefault();
     emailjs.sendForm('service_htgcwa6', 'template_w1uls6h', e.target, 'user_320dn2BuKuORXomQQQTH1')
       .then(() => {
-        console.log('OK');
         toast.success('Votre message a bien été envoyé.');
       }, () => {
-        console.log('ERROR');
         toast.error('Une erreur inattendue s\'est produite. veuillez réessayer ultérieurement ');
       });
   };

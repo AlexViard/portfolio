@@ -10,11 +10,15 @@ import {
   IoLayersOutline,
   IoChatbubblesOutline,
   IoPaperPlaneOutline,
+  IoLogoReact,
 } from 'react-icons/io5';
 
 const Menu = () => (
   <div className="menu">
-    <div className="menu-logo">Logo</div>
+    <div className="menu-logo">
+      <IoLogoReact className="menu-logo-icon" />
+      <p>Alex</p>
+    </div>
     <nav className="menu-nav">
       <ul>
         <li className="menu-nav-li">

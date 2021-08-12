@@ -7,7 +7,6 @@ import {
   FcCommandLine,
   FcHome,
 } from 'react-icons/fc';
-
 import imgAlex from 'src/assets/images/alex-cartoon.png';
 import './style.scss';
 
@@ -35,7 +34,7 @@ const AboutMe = () => {
               changer entièrement de technologie et de me tourner vers
               le grand JavaScript, avec l'école O'clock pour me specialiser vers React.js !
             </p>
-            <div className="about_me-content-container-btn">Télécharger CV</div>
+              <div className="about_me-content-container-btn">Télécharger CV</div>
           </div>
         </div>
         <ul className="about_me-infobar" data-aos="fade-up">
