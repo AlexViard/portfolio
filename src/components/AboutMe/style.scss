@@ -26,7 +26,6 @@
       background-color: vars.$primary-color-lightness;
       padding: 1.5em;
       border-radius: 20px;
-      // max-width: 650px;
       width: 70%;
 
       &-text {
@@ -85,6 +84,42 @@
   @media screen and (max-width: 1410px) {
     & {
       margin-left: 0px;
+    }
+  }
+
+  @media screen and (max-width: 980px) {
+    &-content-container {
+      width: 80%;
+      margin: 1em auto;
+    }
+
+    &-content-container-btn {
+      margin: 1em auto 0 auto;
+    }
+  }
+
+  @media screen and (max-width: 960px) {
+    &-infobar-info {
+      width: 70% !important;
+    }
+  }
+
+  @media screen and (max-width: 545px) {
+    &-title {
+      text-align: center;
+    }
+    & {
+      padding: 0;
+    }
+
+    &-content-container {
+      width: 80%;
+    }
+  }
+
+  @media screen and (max-width: 1121px) {
+    &-infobar-info {
+      width: 40%;
     }
   }
 }
