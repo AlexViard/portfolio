@@ -79,4 +79,19 @@
       margin-left: 0px;
     }
   }
+
+  @media screen and (max-width: 1000px) {
+    &-content-container {
+      width: 80%;
+    } 
+  }
+
+  @media screen and (max-width: 730px) {
+    &-content-title {
+      text-align: center;
+    }
+    & {
+      padding: 5em 0;
+    }
+  }
 }
