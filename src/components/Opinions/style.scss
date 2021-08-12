@@ -82,4 +82,10 @@
   .swiper-button-next {
     color: vars.$third-color;
   }
+
+  @media screen and (max-width: 1410px) {
+    & {
+      margin-left: 0px;
+    }
+  }
 }

@@ -55,6 +55,12 @@
   &-copyright {
     font-weight: vars.$light-weight;
   }
+
+  @media screen and (max-width: 1410px) {
+    & {
+      display: none;
+    }
+  }
 }
 
 @keyframes spin {

@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import Modal from 'react-modal';
 import {
   FiLink,
   FiMoreHorizontal,
@@ -9,31 +8,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import './style.scss';
 
-Modal.setAppElement('#root');
-
 const Works = () => {
-  const [modalIsOpen, setIsOpen] = React.useState(false);
-
-  // Config Modal
-  const openModal = () => {
-    setIsOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsOpen(false);
-  };
-
-  const customStylesModal = {
-    content: {
-      top: '50%',
-      left: '50%',
-      right: 'auto',
-      bottom: 'auto',
-      marginRight: '-50%',
-      transform: 'translate(-50%, -50%)',
-    },
-  };
-
   const divStyle = {
     backgroundColor: '#50BBD7',
   };
@@ -67,30 +42,11 @@ const Works = () => {
                   <FiLink />
                 </a>
                 <a href="#">
-                  <FiMoreHorizontal onClick={openModal} />
+                  <FiMoreHorizontal />
                 </a>
               </div>
             </div>
           </div>
-          <Modal
-            isOpen={modalIsOpen}
-            onRequestClose={closeModal}
-            style={customStylesModal}
-            contentLabel="Example Modal"
-          >
-            <div className="modal-img"></div>
-            <div className="modal-description">
-              <div className="modal-description-devlopment">
-                <h1>Days in Paris</h1>
-                <p>Développement de la plateforme « Les Mills Traning Day », ayant pour objectif la mise en avant des instructeurs / trainers Les Mills.</p>
-              </div>
-              <div className="modal-description-info">
-                <p>Année : 2020</p>
-                <p>Categories : developpement Web</p>
-              </div>
-            </div>
-          </Modal>
-
           <div className="works-container" data-aos="fade-up">
             <div className="works-container-filter">
               <p className="works-container-category" style={divStyle}>React</p>
