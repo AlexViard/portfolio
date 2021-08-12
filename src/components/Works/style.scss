@@ -17,6 +17,7 @@
 
   &-nav {
     margin-top: 3em;
+    text-align: center;
   }
 
   &-categories {
@@ -123,6 +124,23 @@
   @media screen and (max-width: 1410px) {
     & {
       margin-left: 0px;
+    }
+  }
+
+  @media screen and (max-width: 730px) {
+
+    &-title {
+      width: 80%;
+      text-align: center;
+      margin: auto;
+    }
+    & {
+      padding: 5em 0;
+    }
+
+    &-nav {
+      width: 80%;
+      margin: 3em auto 0 auto;
     }
   }
 }

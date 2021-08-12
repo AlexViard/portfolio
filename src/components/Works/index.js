@@ -25,8 +25,6 @@ const Works = () => {
         <nav className="works-nav" data-aos="fade-down">
           <ul className="works-categories">
             <li className="works-category">Tout les projets</li>
-            <li className="works-category">React</li>
-            <li className="works-category">Node.js</li>
             <li className="works-category">Projets Personels</li>
           </ul>
         </nav>
