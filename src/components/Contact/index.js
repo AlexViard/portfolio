@@ -56,7 +56,7 @@ const Contact = () => {
   }, []);
 
   return (
-    <div className="contact">
+    <div className="contact" id="contact">
       <div className="contact-content">
         <h1 className="contact-content-title" data-aos="fade-up">Me contacter</h1>
 

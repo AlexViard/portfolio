@@ -26,7 +26,7 @@ const Opinions = () => {
   }, []);
 
   return (
-    <div className="opinions">
+    <div className="opinions" id="opinions">
       <div className="opinions-content">
         <h1 className="opinions-title" data-aos="fade-up">Avis</h1>
 

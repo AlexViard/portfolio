@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { NavHashLink } from 'react-router-hash-link';
 import {
   IoHomeOutline,
   IoPersonOutline,
@@ -11,44 +12,67 @@ import {
 
 import './style.scss';
 
-const CurvedNavBar = () => {
-  const [menuItems, setMenuItems] = useState({
-    home: true,
-    aboutMe: false,
-    experience: false,
-    skills: false,
-    works: false,
-    opinions: false,
-    contact: false,
-  });
-
-  return (
-    <nav className="curved">
-      <ul className="curved-list">
-        <li className={`curved-list-item ${menuItems.home && 'active'}`}>
-          <IoHomeOutline />
-        </li>
-        <li className={`curved-list-item ${menuItems.aboutMe && 'active'}`}>
-          <IoPersonOutline />
-        </li>
-        <li className={`curved-list-item ${menuItems.experience && 'active'}`}>
-          <IoSchoolOutline />
-        </li>
-        <li className={`curved-list-item ${menuItems.skills && 'active'}`}>
-          <IoCodeSlashOutline />
-        </li>
-        <li className={`curved-list-item ${menuItems.works && 'active'}`}>
-          <IoLayersOutline />
-        </li>
-        <li className={`curved-list-item ${menuItems.opinions && 'active'}`}>
-          <IoChatbubblesOutline />
-        </li>
-        <li className={`curved-list-item ${menuItems.contact && 'active'}`}>
-          <IoPaperPlaneOutline />
-        </li>
-      </ul>
-    </nav>
-  );
-};
+const CurvedNavBar = () => (
+  <nav className="curved">
+    <ul className="curved-list">
+      <NavHashLink
+        className="curved-list-item"
+        smooth
+        to="/#home"
+        activeClassName="active"
+      >
+        <IoHomeOutline />
+      </NavHashLink>
+      <NavHashLink
+        className="curved-list-item"
+        smooth
+        to="/#aboutMe"
+        activeClassName="active"
+      >
+        <IoPersonOutline />
+      </NavHashLink>
+      <NavHashLink
+        className="curved-list-item"
+        smooth
+        to="/#experience"
+        activeClassName="active"
+      >
+        <IoSchoolOutline />
+      </NavHashLink>
+      <NavHashLink
+        className="curved-list-item"
+        smooth
+        to="/#skills"
+        activeClassName="active"
+      >
+        <IoCodeSlashOutline />
+      </NavHashLink>
+      <NavHashLink
+        className="curved-list-item"
+        smooth
+        to="/#works"
+        activeClassName="active"
+      >
+        <IoLayersOutline />
+      </NavHashLink>
+      <NavHashLink
+        className="curved-list-item"
+        smooth
+        to="/#opinions"
+        activeClassName="active"
+      >
+        <IoChatbubblesOutline />
+      </NavHashLink>
+      <NavHashLink
+        className="curved-list-item"
+        smooth
+        to="/#contact"
+        activeClassName="active"
+      >
+        <IoPaperPlaneOutline />
+      </NavHashLink>
+    </ul>
+  </nav>
+);
 
 export default CurvedNavBar;

@@ -18,7 +18,7 @@ const Works = () => {
   }, []);
 
   return (
-    <div className="works">
+    <div className="works" id="works">
       <div className="works-content">
         <h1 className="works-title" data-aos="fade-up">Mes projets</h1>
 

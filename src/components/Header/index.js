@@ -16,7 +16,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="header">
+    <div className="header" id="home">
       <div className="header-content">
         <div className="header-content-intro" data-aos="fade-up">
           <h1 className="header-content-title">Alex Viard</h1>

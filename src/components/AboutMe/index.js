@@ -16,7 +16,7 @@ const AboutMe = () => {
   }, []);
 
   return (
-    <div className="about_me">
+    <div className="about_me" id="aboutMe">
       <div className="about_me-page">
         <h1 className="about_me-title" data-aos="fade-up">À propos de moi</h1>
 

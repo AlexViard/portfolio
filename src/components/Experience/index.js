@@ -14,7 +14,7 @@ const Experience = () => {
   }, []);
 
   return (
-    <div className="experience">
+    <div className="experience" id="experience">
       <div className="experience-content">
         <h1 className="experience-content-title" data-aos="fade-up">Experience</h1>
 
