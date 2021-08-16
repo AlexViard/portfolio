@@ -1,5 +1,9 @@
 // == Import npm
 import React, { useState } from 'react';
+import {
+  Switch,
+  Route,
+} from 'react-router-dom';
 // == Import components
 import Menu from 'src/components/Menu';
 import Header from 'src/components/Header';
@@ -11,6 +15,7 @@ import Opinions from 'src/components/Opinions';
 import Contact from 'src/components/Contact';
 import Loader from 'src/components/Loader';
 import CurvedNavBar from 'src/components/CurvedNavBar';
+import NotFound from 'src/components/NotFound';
 
 import './styles.scss';
 
@@ -22,16 +27,20 @@ const App = () => {
       {loader && <Loader />}
       {!loader && (
       <div className="app">
-        <Menu />
-        <Header />
-        <AboutMe />
-        <Experience />
-        <Skills />
-        <Works />
-        <Opinions />
-        <Contact />
-
-        <CurvedNavBar />
+        <Switch>
+          <Route exact path="/">
+            <Menu />
+            <Header />
+            <AboutMe />
+            <Experience />
+            <Skills />
+            <Works />
+            <Opinions />
+            <Contact />
+            <CurvedNavBar />
+          </Route>
+          <NotFound />
+        </Switch>
       </div>
       )}
     </>

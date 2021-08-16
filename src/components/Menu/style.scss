@@ -56,6 +56,10 @@
     font-weight: vars.$light-weight;
   }
 
+  .selected {
+    color: vars.$third-color;
+  }
+
   @media screen and (max-width: 1410px) {
     & {
       display: none;
