@@ -1,6 +1,5 @@
 // == Import npm
 import React, { useState } from 'react';
-
 // == Import components
 import Menu from 'src/components/Menu';
 import Header from 'src/components/Header';
@@ -11,6 +10,7 @@ import Works from 'src/components/Works';
 import Opinions from 'src/components/Opinions';
 import Contact from 'src/components/Contact';
 import Loader from 'src/components/Loader';
+import CurvedNavBar from 'src/components/CurvedNavBar';
 
 import './styles.scss';
 
@@ -30,8 +30,10 @@ const App = () => {
         <Works />
         <Opinions />
         <Contact />
+
+        <CurvedNavBar />
       </div>
-      )};
+      )}
     </>
   );
 };
