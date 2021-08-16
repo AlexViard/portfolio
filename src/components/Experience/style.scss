@@ -36,10 +36,12 @@
       }
 
       &-containers {
-        margin-top: 5em;
+        margin: 5em auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+        width: 100%;
+        overflow-x: hidden;
       }
 
       &-container {
@@ -72,5 +74,32 @@
           line-height: 1.7;
         }
       }
+  }
+
+  @media screen and (max-width: 1410px) {
+    & {
+      margin-left: 0px;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    &-content-containers {
+      flex-direction: column;
+    } 
+    &-content-container {
+      width: 80%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  @media screen and (max-width: 730px) {
+    &-content-title {
+      text-align: center;
+    }
+    & {
+      padding: 5em 0;
+      // width: 100%;
+    }
   }
 }

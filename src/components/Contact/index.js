@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 import emailjs from 'emailjs-com';
 import {
   GoogleMap,
@@ -12,11 +12,12 @@ import {
   AiOutlineForm,
 } from 'react-icons/ai';
 
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 import {
   ToastContainer,
   toast,
-  Zoom,
-  Bounce,
 } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -27,10 +28,8 @@ const Contact = () => {
     e.preventDefault();
     emailjs.sendForm('service_htgcwa6', 'template_w1uls6h', e.target, 'user_320dn2BuKuORXomQQQTH1')
       .then(() => {
-        console.log('OK');
         toast.success('Votre message a bien été envoyé.');
       }, () => {
-        console.log('ERROR');
         toast.error('Une erreur inattendue s\'est produite. veuillez réessayer ultérieurement ');
       });
   };
@@ -52,10 +51,14 @@ const Contact = () => {
 
   const WrappedMap = withScriptjs(withGoogleMap(map));
 
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
+
   return (
-    <div className="contact">
+    <div className="contact" id="contact">
       <div className="contact-content">
-        <h1 className="contact-content-title">Me contacter</h1>
+        <h1 className="contact-content-title" data-aos="fade-up">Me contacter</h1>
 
         <div className="contact-content-container">
 
@@ -70,7 +73,7 @@ const Contact = () => {
 
           <div className="contact-content-container-informations">
             <ToastContainer />
-            <form className="contact-form" onSubmit={sendEmail}>
+            <form className="contact-form" onSubmit={sendEmail} data-aos="fade-left">
               <div className="row">
                 <div className="row-input">
                   <AiOutlineUser className="icon" />

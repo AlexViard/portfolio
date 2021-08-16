@@ -2,24 +2,29 @@
 
 .header {
   margin-left: 290px;
-  padding-top: 10em;
+  height: 100vh;
   background-color: vars.$primary-color;
   color: vars.$secondary-color;
-  height: 100vh;
+  overflow-x: hidden;
+  
 
     &-content {
       display: flex;
+      flex-wrap: wrap-reverse;
       justify-content: space-around;
       align-items: center;
+      height: 86%;
+      width: 100%;
 
       &-intro {
-        text-align: center;
+        margin: 0.5em;
       }
     
       &-title {
         font-size: vars.$title-size;
         margin-bottom: 0.5em;
         font-weight: vars.$bold-weight;
+        text-align: center;
       }
       
       &-subtitle {
@@ -28,6 +33,7 @@
       }
     
       &-list {
+        text-align: center;
         font-size: 2em;
         display: flex;
         justify-content: center;
@@ -42,6 +48,7 @@
       }
     
       &-btn {
+        text-align: center;
         background-color: vars.$third-color;
         padding: 1em;
         font-weight: vars.$bold-weight;
@@ -64,7 +71,7 @@
   
 
   &-scrool-down {
-    margin: 5em auto;
+    margin: auto;
     width: 50px;
     height: 90px;
     border: 3px solid #333;
@@ -97,6 +104,19 @@
     to {
       opacity: 0;
       top: 60px;
+    }
+  }
+
+  @media screen and (max-width: 1410px) {
+    & {
+      margin-left: 0px;
+    }
+  }
+
+  @media screen and (max-width: 730px) {
+    &-content-img {
+      width: 80%;
+      height: auto;
     }
   }
 }

@@ -4,6 +4,7 @@
   margin-left: 290px;
   color: vars.$secondary-color;
   padding: 5em;
+  overflow-x: hidden;
 
   &-content {
     max-width: 100%;
@@ -107,10 +108,6 @@
     // border: 1px solid red;
     width: 400px;
 
-    &-container {
-      // padding: 1.5em;
-    }
-
     &-content {
       margin-bottom: 1.5em;
       text-align: center;
@@ -172,6 +169,27 @@
     color: vars.$postgresql;
   }
 
+  @media screen and (max-width: 1410px) {
+    & {
+      margin-left: 0px;
+    }
+  }
+
+  @media screen and (max-width: 730px) {
+    &-title {
+      text-align: center;
+      width: 80%;
+      margin: auto;
+    }
+    & {
+      padding: 5em 0;
+    }
+
+    &-containers {
+      width: 80%;
+      margin: 5em auto 0 auto;
+    }
+  }
 }
 
 

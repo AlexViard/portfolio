@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.scss';
+import { NavHashLink } from 'react-router-hash-link';
 
 // import des Icons
 import {
@@ -10,41 +11,86 @@ import {
   IoLayersOutline,
   IoChatbubblesOutline,
   IoPaperPlaneOutline,
+  IoLogoReact,
 } from 'react-icons/io5';
 
 const Menu = () => (
   <div className="menu">
-    <div className="menu-logo">Logo</div>
+    <div className="menu-logo">
+      <IoLogoReact className="menu-logo-icon" />
+      <p>Alex</p>
+    </div>
     <nav className="menu-nav">
       <ul>
-        <li className="menu-nav-li">
+        <NavHashLink
+          smooth
+          to="/#home"
+          className="menu-nav-li"
+          activeClassName="selected"
+        >
           <IoHomeOutline />
-          <a className="menu-nav-li-link">Accueil</a>
-        </li>
-        <li className="menu-nav-li">
+          <p className="menu-nav-li-link">Accueil</p>
+        </NavHashLink>
+
+        <NavHashLink
+          smooth
+          to="/#aboutMe"
+          className="menu-nav-li"
+          activeClassName="selected"
+        >
           <IoPersonOutline />
-          <a className="menu-nav-li-link">À propos de moi</a>
-        </li>
-        <li className="menu-nav-li">
+          <p className="menu-nav-li-link">À propos de moi</p>
+        </NavHashLink>
+
+        <NavHashLink
+          smooth
+          to="/#experience"
+          className="menu-nav-li"
+          activeClassName="selected"
+        >
           <IoSchoolOutline />
-          <a className="menu-nav-li-link">Experiences</a>
-        </li>
-        <li className="menu-nav-li">
+          <p className="menu-nav-li-link">Experiences</p>
+        </NavHashLink>
+
+        <NavHashLink
+          smooth
+          to="/#skills"
+          className="menu-nav-li"
+          activeClassName="selected"
+        >
           <IoCodeSlashOutline />
-          <a className="menu-nav-li-link">Compétences</a>
-        </li>
-        <li className="menu-nav-li">
+          <p className="menu-nav-li-link">Compétences</p>
+        </NavHashLink>
+
+        <NavHashLink
+          smooth
+          to="/#works"
+          className="menu-nav-li"
+          activeClassName="selected"
+        >
           <IoLayersOutline />
-          <a className="menu-nav-li-link">Projets</a>
-        </li>
-        <li className="menu-nav-li">
+          <p className="menu-nav-li-link">Projets</p>
+        </NavHashLink>
+
+        <NavHashLink
+          smooth
+          to="/#opinions"
+          className="menu-nav-li"
+          activeClassName="selected"
+        >
           <IoChatbubblesOutline />
-          <a className="menu-nav-li-link">Avis</a>
-        </li>
-        <li className="menu-nav-li">
+          <p className="menu-nav-li-link">Avis</p>
+        </NavHashLink>
+
+        <NavHashLink
+          smooth
+          to="/#contact"
+          className="menu-nav-li"
+          activeClassName="selected"
+        >
           <IoPaperPlaneOutline />
-          <a className="menu-nav-li-link">Me contacter</a>
-        </li>
+          <p className="menu-nav-li-link">Me contacter</p>
+        </NavHashLink>
       </ul>
     </nav>
     <p className="menu-copyright">Alex Viard © copyright 2021</p>
