@@ -34,7 +34,9 @@ const AboutMe = () => {
               changer entièrement de technologie et de me tourner vers
               le grand JavaScript, avec l'école O'clock pour me specialiser vers React.js !
             </p>
+            <a href="https://drive.google.com/file/d/1aA2W6grWg6GKP0felykfNC2Y4u9zt1Xb/view" target="_blank" rel="noreferrer">
               <div className="about_me-content-container-btn">Télécharger CV</div>
+            </a>
           </div>
         </div>
         <ul className="about_me-infobar" data-aos="fade-up">

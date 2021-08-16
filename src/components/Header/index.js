@@ -55,7 +55,6 @@ const Header = () => {
           <img src="" alt="" />
         </div>
       </div>
-
       <div className="header-scrool-down" />
     </div>
   );
