@@ -9,9 +9,8 @@
   color: vars.$secondary-color;
   width: 290px;
   transition: 0.4s;
-  overflow: hidden;
   z-index: 999;
-  
+
   &:hover {
     transform: translate(-240px);
     transition: 0.4s;

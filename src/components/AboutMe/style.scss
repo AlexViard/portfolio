@@ -2,7 +2,7 @@
 
 .about_me {
   margin-left: 290px;
-  color: vars.$secondary-color;
+  color: var(--secondary-color);
   padding: 5em;
   
 
@@ -24,7 +24,7 @@
     overflow-x: hidden;
     
     &-container {
-      background-color: vars.$primary-color-lightness;
+      background-color: var(--color-lightness);
       padding: 1.5em;
       border-radius: 20px;
       width: 70%;
@@ -44,6 +44,7 @@
         cursor: pointer;
         text-align: center;
         margin-top: 1em;
+        color: #F9F9FF;
 
         &:hover {
           transform: scale(1.05);
