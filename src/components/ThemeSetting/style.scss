@@ -4,12 +4,21 @@
   display: flex;
   // border: 1px solid red;
   position: fixed;
-  right: 0px;
+  right: -240px;
   top: 100px;
   color: vars.$secondary-color;
   width: 290px;
+  transition: 0.4s;
+  overflow: hidden;
+  z-index: 999;
+  
+  &:hover {
+    transform: translate(-240px);
+    transition: 0.4s;
+  }
 
   &-icon {
+    cursor: pointer;
     font-size: 2em;
     padding: 0.3em 1em 0.3em 0.3em;
     background-color: vars.$primary-color;
@@ -19,6 +28,11 @@
     border-left: 1px solid hsla(0,0%,100%,.1);
     // box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     height: fit-content;
+
+    // &:hover > .theme-setting {
+    //   transform: translate(-240px);
+    //   transition: 0.4s;
+    // }
   }
 
   &-menu {
@@ -41,7 +55,7 @@
         border-radius: 5px;
         width: 35px;
         height: 35px;
-        // background-color: red;
+        cursor: pointer;
         margin: 0.5em;
       }
     }
