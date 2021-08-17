@@ -4,7 +4,7 @@
 
 .experience {
   margin-left: 290px;
-  color: vars.$secondary-color;
+  color: var(--secondary-color);
   padding: 5em;
 
   &-content {
@@ -47,7 +47,7 @@
       &-container {
         padding: 1.5em;
         border-radius: 20px;
-        background-color: vars.$primary-color-lightness;
+        background-color: var(--color-lightness);
         display: flex;
         width: 45%;
         margin-bottom: 1em;
