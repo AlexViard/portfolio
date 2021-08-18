@@ -3,8 +3,7 @@
 .header {
   margin-left: 290px;
   height: 100vh;
-  background-color: vars.$primary-color;
-  color: vars.$secondary-color;
+  color: var(--secondary-color);
   overflow-x: hidden;
   
 
@@ -48,6 +47,7 @@
       }
     
       &-btn {
+        color: #F4F6F7;
         text-align: center;
         background-color: vars.$third-color;
         padding: 1em;

@@ -2,9 +2,10 @@
 
 .contact {
   margin-left: 290px;
-  color: vars.$secondary-color;
+  color: var(--secondary-color);
   padding: 5em;
   overflow-x: hidden;
+  margin-bottom: 2em;
 
   &-content {
     width: 100%;

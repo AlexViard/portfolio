@@ -1,7 +1,7 @@
 @use 'src/styles/vars';
 
 .menu {
-  color: vars.$secondary-color;
+  color: var(--secondary-color);
   border-right: 1px solid hsla(0,0%,100%,.1);
   position: fixed;
   left: 0;
