@@ -3,8 +3,9 @@
 $primary-color: #1D1E21;
 $secondary-color: #F9F9FF;
 $third-color: #BA2929;
-// #BA2929
 $primary-color-lightness: color.scale($primary-color, $lightness: -30%);
+$secondary-color-lightness: color.scale($secondary-color, $lightness: -30%);
+
 $third-color-opacity: color.adjust($third-color, $alpha: -0.4);
 
 $light-weight: 300;
@@ -24,3 +25,62 @@ $node: #85bd32;
 $redux: rgb(118, 74, 188);
 $postgresql: #416cdf;
 
+
+// test 
+
+[data-theme="light"] {
+  --primary-color: #F4F6F7;
+  --secondary-color: #1D1E21;
+  --color-lightness: #{color.scale(#F4F6F7, $lightness: 100%)};
+}
+
+[data-theme="dark"] {
+  --primary-color: #1D1E21;
+  --secondary-color: #F4F6F7;
+  --color-lightness: #{color.scale(#1D1E21, $lightness: -30%)};
+}
+
+[color="red"] {
+  --third-color: #BA2929;
+  --third-color-opacity: #{color.adjust(#BA2929, $alpha: -0.4)};
+}
+
+[color="green"] {
+  --third-color: #059040;
+  --third-color-opacity: #{color.adjust(#059040, $alpha: -0.4)};
+}
+
+[color="blue"] {
+  --third-color: #08689E;
+  --third-color-opacity: #{color.adjust(#08689E, $alpha: -0.4)};
+}
+
+[color="orange"] {
+  --third-color: #EB7524;
+  --third-color-opacity: #{color.adjust(#EB7524, $alpha: -0.4)};
+}
+
+[color="yellow"] {
+  --third-color: #E7D21C;
+  --third-color-opacity: #{color.adjust(#E7D21C, $alpha: -0.4)};
+}
+
+[color="purple"] {
+  --third-color: #8610B6;
+  --third-color-opacity: #{color.adjust(#8610B6, $alpha: -0.4)};
+}
+
+[color="brown"] {
+  --third-color: #54350A;
+  --third-color-opacity: #{color.adjust(#54350A, $alpha: -0.4)};
+}
+
+[color="pink"] {
+  --third-color: #C1219C;
+  --third-color-opacity: #{color.adjust(#C1219C, $alpha: -0.4)};
+}
+
+[color="turquoise"] {
+  --third-color: #21C1BF;
+  --third-color-opacity: #{color.adjust(#21C1BF, $alpha: -0.4)};
+}

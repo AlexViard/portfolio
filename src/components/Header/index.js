@@ -49,7 +49,7 @@ const Header = () => {
               </a>
             </li>
           </ul>
-          <div className="header-content-btn">Me contactez</div>
+          <div className="header-content-btn">Me contacter</div>
         </div>
         <div className="header-content-img" data-aos="fade-up">
           <img src="" alt="" />

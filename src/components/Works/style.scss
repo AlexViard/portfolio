@@ -2,7 +2,7 @@
 
 .works {
   margin-left: 290px;
-  color: vars.$secondary-color;
+  color: var(--secondary-color);
   padding: 5em;
   overflow-x: hidden;
 
@@ -27,7 +27,7 @@
   }
 
   &-category {
-    background-color: vars.$primary-color-lightness;
+    background-color: var(--color-lightness);
     padding: 1em;
     margin: 0.2em;
     font-size: vars.$text-size;
@@ -35,7 +35,7 @@
     border-radius: 20px;
 
     &:hover {
-      background-color: vars.$third-color;
+      background-color: var(--third-color);
     }
   }
 
@@ -56,7 +56,7 @@
   }
 
   &-container {
-    background: vars.$primary-color-lightness;
+    // background: var(--color-lightness);
     width: 250px;
     height: 250px;
     margin: 1em;
@@ -64,6 +64,7 @@
     background-image: url("src/assets/images/img-works.jpg");
     background-position: center;
     background-size: cover;
+    color: #F4F6F7;
 
     &-filter {
       padding: 1.5em;
@@ -78,7 +79,7 @@
       position: relative;
 
       &:hover {
-        background-color: vars.$third-color-opacity; 
+        background-color: var(--third-color-opacity); 
 
         .works-container-title {
           opacity: 1;

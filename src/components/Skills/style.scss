@@ -2,7 +2,7 @@
 
 .skills {
   margin-left: 290px;
-  color: vars.$secondary-color;
+  color: var(--secondary-color);
   padding: 5em;
   overflow-x: hidden;
 
@@ -55,7 +55,7 @@
     &-progress-line {
       height: 10px;
       width: 100%;
-      background: vars.$primary-color-lightness;
+      background: var(--color-lightness);
       position: relative;
       border-radius: 10px;
       transform: scaleX(0);
@@ -64,7 +64,7 @@
 
        & span {
         height: 100%;
-        background-color: vars.$third-color;
+        background-color: var(--third-color);
         border-radius: 10px;
         position: absolute;
         transform: scaleX(0);
@@ -137,7 +137,7 @@
     &-icon {
       font-size: 2em;
       margin-right: 0.3em;
-      color: vars.$third-color;
+      color: var(--third-color);
     }
   }
 

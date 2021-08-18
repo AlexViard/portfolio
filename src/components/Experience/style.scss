@@ -4,7 +4,7 @@
 
 .experience {
   margin-left: 290px;
-  color: vars.$secondary-color;
+  color: var(--secondary-color);
   padding: 5em;
 
   &-content {
@@ -14,7 +14,7 @@
         display: flex;
 
         &-icon {
-          color: vars.$third-color;
+          color: var(--third-color);
           font-size: 30px;
           // margin-right: 0.5em; 
           position: absolute;
@@ -24,7 +24,7 @@
       &-line {
         position: absolute;
         width: 1px;
-        background-color: vars.$third-color;
+        background-color: var(--third-color);
         top: 20px;
         bottom: 30px;
         left: 38px;
@@ -47,7 +47,7 @@
       &-container {
         padding: 1.5em;
         border-radius: 20px;
-        background-color: vars.$primary-color-lightness;
+        background-color: var(--color-lightness);
         display: flex;
         width: 45%;
         margin-bottom: 1em;
@@ -65,7 +65,7 @@
         }
 
         &-subtitle {
-          color: vars.$third-color;
+          color: var(--third-color);
           font-style: italic;
           margin-bottom: 1em;
         }

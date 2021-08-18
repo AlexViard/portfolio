@@ -1,7 +1,7 @@
 @use 'src/styles/vars';
 
 .menu {
-  color: vars.$secondary-color;
+  color: var(--secondary-color);
   border-right: 1px solid hsla(0,0%,100%,.1);
   position: fixed;
   left: 0;
@@ -48,7 +48,7 @@
 
     &-li:hover {
      cursor: pointer;
-     color: vars.$third-color; 
+     color: var(--third-color); 
     }
   }
 
@@ -57,7 +57,7 @@
   }
 
   .selected {
-    color: vars.$third-color;
+    color: var(--third-color);
   }
 
   @media screen and (max-width: 1410px) {

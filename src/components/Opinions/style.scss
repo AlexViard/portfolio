@@ -2,7 +2,7 @@
 
 .opinions {
   margin-left: 290px;
-  color: vars.$secondary-color;
+  color: var(--secondary-color);
   padding: 5em;
   overflow-x: hidden;
 
@@ -26,7 +26,7 @@
   }
   .swiper-slide {
     border-radius: 20px;
-    background-color: vars.$primary-color-lightness;
+    background-color: var(--color-lightness);
     width: 300px;
     height: 400px;
     padding: 1em;
@@ -74,7 +74,7 @@
   }
 
   .swiper-pagination-bullet-active {
-    background-color: vars.$third-color;
+    background-color: var(--third-color);
   }
 
   .swiper-pagination-bullet{
@@ -85,11 +85,11 @@
 
   // Style arrows swifter js
   .swiper-button-prev {
-    color: vars.$third-color;
+    color: var(--third-color);
   }
 
   .swiper-button-next {
-    color: vars.$third-color;
+    color: var(--third-color);
   }
 
   @media screen and (max-width: 1410px) {

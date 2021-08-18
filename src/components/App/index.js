@@ -16,6 +16,7 @@ import Contact from 'src/components/Contact';
 import Loader from 'src/components/Loader';
 import CurvedNavBar from 'src/components/CurvedNavBar';
 import NotFound from 'src/components/NotFound';
+import ThemeSetting from 'src/components/ThemeSetting';
 
 import './styles.scss';
 
@@ -30,6 +31,7 @@ const App = () => {
         <Switch>
           <Route exact path="/">
             <Menu />
+            <ThemeSetting />
             <Header />
             <AboutMe />
             <Experience />
