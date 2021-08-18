@@ -64,7 +64,7 @@
 
        & span {
         height: 100%;
-        background-color: vars.$third-color;
+        background-color: var(--third-color);
         border-radius: 10px;
         position: absolute;
         transform: scaleX(0);
@@ -137,7 +137,7 @@
     &-icon {
       font-size: 2em;
       margin-right: 0.3em;
-      color: vars.$third-color;
+      color: var(--third-color);
     }
   }
 

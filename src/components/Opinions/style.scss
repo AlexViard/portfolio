@@ -74,7 +74,7 @@
   }
 
   .swiper-pagination-bullet-active {
-    background-color: vars.$third-color;
+    background-color: var(--third-color);
   }
 
   .swiper-pagination-bullet{
@@ -85,11 +85,11 @@
 
   // Style arrows swifter js
   .swiper-button-prev {
-    color: vars.$third-color;
+    color: var(--third-color);
   }
 
   .swiper-button-next {
-    color: vars.$third-color;
+    color: var(--third-color);
   }
 
   @media screen and (max-width: 1410px) {

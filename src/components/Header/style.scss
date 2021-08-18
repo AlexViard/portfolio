@@ -42,14 +42,14 @@
         }
         
         &-icon:hover {
-          color: vars.$third-color;
+          color: var(--third-color);
         }
       }
     
       &-btn {
         color: #F4F6F7;
         text-align: center;
-        background-color: vars.$third-color;
+        background-color: var(--third-color);
         padding: 1em;
         font-weight: vars.$bold-weight;
         border-radius: 30px;

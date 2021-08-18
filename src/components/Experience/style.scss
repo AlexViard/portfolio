@@ -14,7 +14,7 @@
         display: flex;
 
         &-icon {
-          color: vars.$third-color;
+          color: var(--third-color);
           font-size: 30px;
           // margin-right: 0.5em; 
           position: absolute;
@@ -24,7 +24,7 @@
       &-line {
         position: absolute;
         width: 1px;
-        background-color: vars.$third-color;
+        background-color: var(--third-color);
         top: 20px;
         bottom: 30px;
         left: 38px;
@@ -65,7 +65,7 @@
         }
 
         &-subtitle {
-          color: vars.$third-color;
+          color: var(--third-color);
           font-style: italic;
           margin-bottom: 1em;
         }
