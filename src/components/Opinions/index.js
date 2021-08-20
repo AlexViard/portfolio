@@ -30,7 +30,7 @@ const Opinions = () => {
       <div className="opinions-content">
         <h1 className="opinions-title" data-aos="fade-up">Avis</h1>
 
-        <div className="opinions-container" data-aos="fade-up">
+        <div className="opinions-container" data-aos="slide-up">
           <Swiper
             navigation={window.innerWidth > 730}
             effect="coverflow"
