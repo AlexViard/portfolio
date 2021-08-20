@@ -6,6 +6,8 @@
   margin-left: 290px;
   color: var(--secondary-color);
   padding: 2.5em 5em;
+  overflow-x: hidden;
+  overflow-y: hidden;
 
   &-content {
       width: 100%;
@@ -52,6 +54,7 @@
         width: 45%;
         margin-bottom: 1em;
         position: relative;
+        overflow-y: hidden;
       }
 
       &-list-formation {

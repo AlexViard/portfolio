@@ -20,11 +20,11 @@ const Experience = () => {
 
         <div className="experience-content-containers">
 
-          <div className="experience-content-container" data-aos="fade-right">
+          <div className="experience-content-container">
 
             <ul className="experience-content-list">
 
-              <div className="experience-content-display">
+              <div className="experience-content-display" data-aos="fade-up">
                 <IoSchoolOutline className="experience-content-display-icon" />
                 <li className="experience-content-list-formation">
                   <p className="experience-content-list-formation-title">O'clock</p>
@@ -37,7 +37,7 @@ const Experience = () => {
                 </li>
               </div>
 
-              <div className="experience-content-display">
+              <div className="experience-content-display" data-aos="fade-up">
                 <IoSchoolOutline className="experience-content-display-icon" />
                 <li className="experience-content-list-formation">
                   <p className="experience-content-list-formation-title">The Hacking Project</p>
@@ -50,7 +50,7 @@ const Experience = () => {
                 </li>
               </div>
 
-              <div className="experience-content-display">
+              <div className="experience-content-display" data-aos="fade-up">
                 <IoSchoolOutline className="experience-content-display-icon" />
                 <li className="experience-content-list-formation">
                   <p className="experience-content-list-formation-title">Licence Maths/Informatique</p>
@@ -62,10 +62,10 @@ const Experience = () => {
               <span className="experience-content-line" />
             </ul>
           </div>
-          <div className="experience-content-container" data-aos="fade-left">
+          <div className="experience-content-container">
             <ul className="experience-content-list">
 
-              <div className="experience-content-display">
+              <div className="experience-content-display" data-aos="fade-up">
                 <IoConstructOutline className="experience-content-display-icon" />
                 <li className="experience-content-list-formation">
                   <p className="experience-content-list-formation-title">Développeur Front</p>
@@ -80,7 +80,7 @@ const Experience = () => {
                 </li>
               </div>
 
-              <div className="experience-content-display">
+              <div className="experience-content-display" data-aos="fade-up">
                 <IoConstructOutline className="experience-content-display-icon" />
                 <li className="experience-content-list-formation">
                   <p className="experience-content-list-formation-title">Développeur FullStack</p>
@@ -94,7 +94,7 @@ const Experience = () => {
                 </li>
               </div>
 
-              <div className="experience-content-display">
+              <div className="experience-content-display" data-aos="fade-up">
                 <IoConstructOutline className="experience-content-display-icon" />
                 <li className="experience-content-list-formation">
                   <p className="experience-content-list-formation-title">Développeur FullStack</p>

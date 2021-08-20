@@ -21,7 +21,7 @@ const AboutMe = () => {
         <h1 className="about_me-title" data-aos="fade-up">À propos de moi</h1>
 
         <div className="about_me-content">
-          <div className="about_me-content-img" data-aos="fade-right">
+          <div className="about_me-content-img">
             <img src={imgAlex} alt="Alex cartoon" />
           </div>
           <div className="about_me-content-container" data-aos="fade-left">

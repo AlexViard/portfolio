@@ -6,9 +6,9 @@ import {
 import './style.scss';
 
 const ThemeSetting = () => {
-  const setTheme = (theme) => {
-    document.documentElement.setAttribute('data-theme', theme);
-  };
+  // const setTheme = (theme) => {
+  //   document.documentElement.setAttribute('data-theme', theme);
+  // };
 
   const setColor = (color) => {
     document.documentElement.setAttribute('color', color);
@@ -20,7 +20,7 @@ const ThemeSetting = () => {
         <IoSettingsOutline />
       </div>
       <div className="theme-setting-menu">
-        <h1 className="theme-setting-menu-title">Thème</h1>
+        {/* <h1 className="theme-setting-menu-title">Thème</h1>
         <div className="theme-setting-menu-color">
           <div
             className="theme-setting-menu-color-item dark"
@@ -36,7 +36,7 @@ const ThemeSetting = () => {
             }}
           >
           </div>
-        </div>
+        </div> */}
         <h1 className="theme-setting-menu-title">Couleurs</h1>
         <div className="theme-setting-menu-color">
           <div
