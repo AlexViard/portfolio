@@ -5,7 +5,8 @@
   color: var(--secondary-color);
   padding: 2.5em 5em;
   overflow-x: hidden;
-  margin-bottom: 3em;
+  border: 1px solid red;
+  margin-bottom: 5em;
 
   &-content {
     width: 100%;
@@ -141,7 +142,7 @@
 
     &-content-container {
       width: 80%;
-      margin: 5em auto 0 auto; 
+      margin: 5em auto 0em auto; 
 
       &-informations {
         width: 100%;
