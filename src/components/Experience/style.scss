@@ -5,7 +5,9 @@
 .experience {
   margin-left: 290px;
   color: var(--secondary-color);
-  padding: 5em;
+  padding: 2.5em 5em;
+  overflow-x: hidden;
+  overflow-y: hidden;
 
   &-content {
       width: 100%;
@@ -36,7 +38,7 @@
       }
 
       &-containers {
-        margin: 5em auto;
+        margin: 5em auto 0 auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -52,6 +54,7 @@
         width: 45%;
         margin-bottom: 1em;
         position: relative;
+        overflow-y: hidden;
       }
 
       &-list-formation {
@@ -98,7 +101,7 @@
       text-align: center;
     }
     & {
-      padding: 5em 0;
+      padding: 2.5em 0;
       // width: 100%;
     }
   }

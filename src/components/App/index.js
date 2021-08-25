@@ -1,10 +1,11 @@
 // == Import npm
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Switch,
   Route,
 } from 'react-router-dom';
 // == Import components
+import api from 'src/api';
 import Menu from 'src/components/Menu';
 import Header from 'src/components/Header';
 import AboutMe from 'src/components/AboutMe';
@@ -23,6 +24,22 @@ import './styles.scss';
 // == Composant
 const App = () => {
   const [loader, setLoader] = useState(false);
+  const [repos, setRepos] = useState([]);
+
+  useEffect(async () => {
+    setLoader(true);
+    try {
+      const {data} = await api.get('/users/AlexViard/repos');
+      setRepos(data);
+      console.log(response.data);
+      
+    }
+    catch (err) {
+      console.log(err);
+    }
+    setLoader(false);
+  }, []);
+
   return (
     <>
       {loader && <Loader />}
@@ -36,7 +53,7 @@ const App = () => {
             <AboutMe />
             <Experience />
             <Skills />
-            <Works />
+            <Works repositories={repos} />
             <Opinions />
             <Contact />
             <CurvedNavBar />

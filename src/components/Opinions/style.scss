@@ -3,8 +3,9 @@
 .opinions {
   margin-left: 290px;
   color: var(--secondary-color);
-  padding: 5em;
+  padding: 2.5em 5em;
   overflow-x: hidden;
+  overflow-y: hidden;
 
   &-content {
     max-width: 100%;
@@ -106,7 +107,7 @@
       margin: auto;
     }
     & {
-      padding: 5em 0;
+      padding: 2.5em 0;
     }
 
     &-container {
