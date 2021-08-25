@@ -25,7 +25,6 @@ const Works = ({ repositories }) => {
 
         <div className="works-containers">
           {repositories.map((elem) => (
-            
             <Work {...elem} img={`https://raw.githubusercontent.com/AlexViard/${elem.name}/master/img/img-portfolio.png`} />
           ))}
         </div>
