@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import emailjs from 'emailjs-com';
 import {
   GoogleMap,
@@ -10,6 +10,7 @@ import {
   AiOutlineUser,
   AiOutlineMail,
   AiOutlineForm,
+  AiOutlineLoading,
 } from 'react-icons/ai';
 
 import Aos from 'aos';
@@ -24,14 +25,28 @@ import 'react-toastify/dist/ReactToastify.css';
 import './style.scss';
 
 const Contact = () => {
+  const [loader, setLoader] = useState(false);
   const sendEmail = (e) => {
+    setLoader(true);
     e.preventDefault();
     emailjs.sendForm('service_htgcwa6', 'template_w1uls6h', e.target, 'user_320dn2BuKuORXomQQQTH1')
       .then(() => {
         toast.success('Votre message a bien été envoyé.');
-      }, () => {
+      })
+      .catch(() => {
         toast.error('Une erreur inattendue s\'est produite. veuillez réessayer ultérieurement ');
+      })
+      .finally(() => {
+        setLoader(false);
       });
+  };
+
+  const sendEmailTest = (e) => {
+    setLoader(true);
+    e.preventDefault();
+    setTimeout(() => {
+      setLoader(false);
+    }, 2000);
   };
 
   const map = () => (
@@ -92,7 +107,12 @@ const Contact = () => {
               <textarea name="content" placeholder="Message" rows="13" required />
 
               <div className="btn">
-                <input type="submit" value="Envoyer" />
+                {loader && (
+                  <AiOutlineLoading className="btn-loader" />
+                )}
+                {!loader && (
+                  <input type="submit" value="Envoyer" disabled={loader} />
+                )}
               </div>
             </form>
           </div>

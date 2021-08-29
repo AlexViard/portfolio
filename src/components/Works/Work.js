@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {
   FiLink,
-  FiMoreHorizontal,
 } from 'react-icons/fi';
 
 import './style.scss';
@@ -18,9 +17,6 @@ const Work = ({ name, language, img }) => (
       <div className="works-container-icon">
         <a href={`https://github.com/AlexViard/${name}`} target="_blank" rel="noreferrer">
           <FiLink />
-        </a>
-        <a href="#">
-          <FiMoreHorizontal />
         </a>
       </div>
     </div>
