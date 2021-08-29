@@ -29,10 +29,8 @@ const App = () => {
   useEffect(async () => {
     setLoader(true);
     try {
-      const {data} = await api.get('/users/AlexViard/repos');
+      const { data } = await api.get('/users/AlexViard/repos');
       setRepos(data);
-      console.log(response.data);
-      
     }
     catch (err) {
       console.log(err);

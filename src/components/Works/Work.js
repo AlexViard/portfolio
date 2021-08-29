@@ -25,8 +25,12 @@ const Work = ({ name, language, img }) => (
 
 Work.propTypes = {
   name: PropTypes.string.isRequired,
-  language: PropTypes.string.isRequired,
+  language: PropTypes.string,
   img: PropTypes.string.isRequired,
+};
+
+Work.defaultProps = {
+  language: null,
 };
 
 export default Work;

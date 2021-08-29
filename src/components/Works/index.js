@@ -35,7 +35,7 @@ const Works = ({ repositories }) => {
 
         <div className="works-containers">
           {getFilterRepositories().map((elem) => (
-            <Work {...elem} img={`https://raw.githubusercontent.com/AlexViard/${elem.name}/master/img/img-portfolio.png`} />
+            <Work key={elem.name} {...elem} img={`https://raw.githubusercontent.com/AlexViard/${elem.name}/master/img/img-portfolio.png`} />
           ))}
         </div>
       </div>
