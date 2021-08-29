@@ -24,7 +24,9 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new Dotenv(),
+    new Dotenv({
+      systemvars: true
+    }),
     new CopyWebpackPlugin({
       patterns: [
         { 
