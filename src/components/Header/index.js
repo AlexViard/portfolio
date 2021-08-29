@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react';
+import { NavHashLink } from 'react-router-hash-link';
 import Aos from 'aos';
 import Typical from 'react-typical';
 import 'aos/dist/aos.css';
+import AlexLaptop from 'src/assets/images/alex-laptop.png';
 import {
   IoLogoInstagram,
   IoLogoGithub,
@@ -49,10 +51,10 @@ const Header = () => {
               </a>
             </li>
           </ul>
-          <div className="header-content-btn">Me contacter</div>
+          <NavHashLink smooth to="/#contact" className="header-content-btn">Me contacter</NavHashLink>
         </div>
         <div className="header-content-img" data-aos="fade-up">
-          <img src="" alt="" />
+          <img src={AlexLaptop} alt="" />
         </div>
       </div>
       <div className="header-scrool-down" />
