@@ -18,26 +18,21 @@
     font-weight: vars.$bold-weight;
   }
 
-  &-nav {
-    margin-top: 3em;
-    text-align: center;
-  }
-
-  &-categories {
-    display: flex;
-    justify-content: center;
-  }
-
-  &-category {
+  &-search {
+    width: 40%;
+    margin: 3em auto 0em auto;
     background-color: var(--color-lightness);
     padding: 1em;
-    margin: 0.2em;
     font-size: vars.$text-size;
     font-weight: vars.$medium-weight;
     border-radius: 20px;
 
-    &:hover {
-      background-color: var(--third-color);
+    input {
+      width: 100%;
+      font-size: vars.$subtitle-size;
+      color: var(--secondary-color);
+      background-color: var(--color-lightness);
+      border: none;
     }
   }
 
@@ -145,6 +140,10 @@
     &-nav {
       width: 80%;
       margin: 3em auto 0 auto;
+    }
+
+    &-search {
+      width: 80%;
     }
   }
 }

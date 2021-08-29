@@ -11,10 +11,14 @@
   transition: 0.4s;
   z-index: 999;
 
-  &:hover {
+  &-active {
     transform: translate(-240px);
     transition: 0.4s;
   }
+  // &:hover {
+  //   transform: translate(-240px);
+  //   transition: 0.4s;
+  // }
 
   &-icon {
     cursor: pointer;

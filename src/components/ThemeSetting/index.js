@@ -1,22 +1,29 @@
 /* eslint-disable react/self-closing-comp */
-import React from 'react';
+import React, { useState } from 'react';
 import {
   IoSettingsOutline,
 } from 'react-icons/io5';
 import './style.scss';
+import classNames from 'classnames';
 
 const ThemeSetting = () => {
   // const setTheme = (theme) => {
   //   document.documentElement.setAttribute('data-theme', theme);
   // };
 
+  const [open, setOpen] = useState(false);
+
   const setColor = (color) => {
     document.documentElement.setAttribute('color', color);
   };
 
+  const toggleSetting = () => {
+    setOpen(!open);
+  };
+
   return (
-    <div className="theme-setting">
-      <div className="theme-setting-icon">
+    <div className={classNames('theme-setting', { 'theme-setting-active': open })}>
+      <div onClick={toggleSetting} className="theme-setting-icon">
         <IoSettingsOutline />
       </div>
       <div className="theme-setting-menu">
